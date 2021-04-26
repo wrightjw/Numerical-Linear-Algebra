@@ -10,10 +10,6 @@ random.seed(2020)
 print('To test implementations - run python3 test_polynomial_interpolation.py')
 print('-------------------------------------------------------------------------------')
 
-"""
-Questions 2b and 2c
-"""
-
 # Given data
 x = arange(-1, 1.1, 0.2)
 f = 0.0*x
@@ -37,10 +33,6 @@ plt.ylabel('F(x)')
 plt.title('Plot of Degree 10 Polynomial, and the \n Observed Datapoints, for Function F(x).')
 plt.savefig('2c_m10.png')
 plt.show()
-
-"""
-Question 2d
-"""
 
 # Perturbations of amount 0.02
 epsilons_002 = 0.02* np.ones(len(f))
@@ -69,10 +61,6 @@ print('The relative condition of the coefficients is, for m=10,', a_10_sensitivi
 print('The relative condition of the polynomial is, for m=10,', F_10_sensitivity_random)
 print('-------------------------------------------------------------------------------')
 
-"""
-Question 2e
-"""
-
 # Returning coefficients for polynomial of degree 7 from constant to highest order term (using function from q2_tools.py)
 # and reversing for use in polyval
 # Using same starting data as in questions 2b and 2c
@@ -92,10 +80,6 @@ plt.ylabel('F(x)')
 plt.title('Plot of Degree 7 Polynomial, and the \n Observed Datapoints, for Function F(x).')
 plt.savefig('2e_m7.png')
 plt.show()
-
-"""
-Question 2f
-"""
 
 # Computing up/down perturbations of f and corresponding coefficient and polynomial sensitivities for m=7
 # using same perturbation values as for m=10
