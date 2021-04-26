@@ -2,7 +2,7 @@ from numpy import *
 from utilities import *
 from decomposing_tools import *
 
-print('Run python3 test_q1.py to test functions')
+print('Run python3 test_decomposing.py to test functions')
 print('------------------------------------------------------------------------------')
 
 # Uploading dataset
